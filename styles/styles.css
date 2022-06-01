@@ -131,12 +131,20 @@ p {
   margin-right: 50px;
 }
 
+/* щоб не робити ще один div зробив флексом цей контейнер, щоб вирівняти по висоті весь вміст футера */
 .header .container {
   display: flex;
   align-items: center;
 }
 
-.icon-smartphone {
+.header-contacts-item{
+  display: flex;
+  align-items: center;
+}
+
+.icon-smartphone, .icon-envelope {
+  margin-right: 10px;
+  fill:var(--text-color-secondary)
 }
 
 .icon-envelope {
@@ -330,7 +338,7 @@ p {
   margin-bottom: 30px;
 }
 
-/* ========================На каких устройствах мы работаем====================== */
+/* ========================ЧЕМ МЫ ЗАНИМАЕМСЯ====================== */
 
 .general-header {
   color: var(--text-color-main);
@@ -345,7 +353,7 @@ p {
   display: flex;
 }
 
-.whatdowedo-item:not(last-child) {
+.whatdowedo-item:not(:last-child) {
   margin-right: 30px;
 }
 
