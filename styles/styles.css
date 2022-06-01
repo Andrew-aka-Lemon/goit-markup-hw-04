@@ -7,7 +7,9 @@
   --bgc-color-main: #e5e5e5;
   --bgc-color-secondary: #f5f4fa;
   --btn-color-focus: #188ce8;
+  --btn-color-social-focus: #2196f3;
   --text-color-footer: #2f303a;
+  --icon-fill: #afb1b8;
 }
 
 body {
@@ -133,6 +135,12 @@ p {
   align-items: center;
 }
 
+.icon-smartphone {
+}
+
+.icon-envelope {
+}
+
 /* ========================FOOTER====================== */
 
 .footer {
@@ -177,12 +185,18 @@ p {
 /* ========================HERO====================== */
 
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: #2f303a;
   text-align: center;
   padding-top: 202px;
   padding-bottom: 198px;
+
+  background-image: url(../images/studio/bgr-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-/* змінну кольору не ставлю, так як явно у Героя буде інший контент */
 
 .hero-title {
   margin-right: auto;
@@ -209,6 +223,7 @@ p {
   background-color: var(--text-colot-accent);
   cursor: pointer;
   padding: 10px 32px;
+  border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: var(--text-colot-accent);
@@ -250,6 +265,25 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+/* .preferences-header:nth-child(1)::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: var(--bgc-color-secondary);
+  margin-bottom: 30px;
+} */
+
+.icon-pref {
+  width: 270px;
+  height: 120px;
+  background-color: var(--bgc-color-secondary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 /* ========================На каких устройствах мы работаем====================== */
@@ -318,11 +352,38 @@ p {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .team-name-info {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
+}
+
+.soc-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--btn-color-social-focus);
+}
+
+.soc-icon {
+fill: var(--icon-fill);
+}
+
+.soc-link:hover .soc-icon {
+  fill: var(--text-color-alt);
 }
 
 /* ========================/// PORTFOLIO ///====================== */
