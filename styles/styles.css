@@ -450,6 +450,15 @@ p {
   border-radius: 4px;
 }
 
+.client-item:hover{
+  border: 1px solid var(--btn-color-social-focus);
+  cursor: pointer;
+}
+
+.client-item:hover .client-icon{
+  fill: var(--btn-color-social-focus)
+}
+
 .client-item:nth-child(6) {
   margin-right: 0;
 }
