@@ -10,6 +10,7 @@
   --btn-color-social-focus: #2196f3;
   --text-color-footer: #2f303a;
   --icon-fill: #afb1b8;
+  --icon-company-fill: #afb1b8;
 }
 
 body {
@@ -179,13 +180,14 @@ p {
 }
 
 .soc-join {
+  margin-bottom: 20px;
+
   color: var(--text-color-alt);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .footer-logo-address {
@@ -205,7 +207,7 @@ p {
 
 .footer-social {
   align-self: flex-start;
-margin-top: 12px;
+  margin-top: 12px;
 }
 
 .soc-icon-footer {
@@ -330,8 +332,7 @@ margin-top: 12px;
 
 /* ========================На каких устройствах мы работаем====================== */
 
-.whatdowedo-header,
-.our-team-header {
+.general-header {
   color: var(--text-color-main);
   font-size: 36px;
   line-height: 1.17;
@@ -426,6 +427,35 @@ margin-top: 12px;
 
 .soc-link:hover .soc-icon {
   fill: var(--text-color-alt);
+}
+
+/* ======================== НАШИ КЛИЕНТЫ ====================== */
+.our-clients {
+  padding-top: 94px;
+}
+.client-list {
+  margin-top: 50px;
+  display: flex;
+}
+
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+}
+
+.client-item:nth-child(6) {
+  margin-right: 0;
+}
+
+.client-icon {
+  fill: var(--icon-company-fill);
 }
 
 /* ========================/// PORTFOLIO ///====================== */
