@@ -178,6 +178,44 @@ p {
   margin-bottom: 9px;
 }
 
+.soc-join {
+  color: var(--text-color-alt);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-logo-address {
+  margin-right: 70px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.soc-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+
+.footer-social {
+  align-self: flex-start;
+margin-top: 12px;
+}
+
+.soc-icon-footer {
+  fill: var(--text-color-alt);
+}
+
+.soc-link:nth-child(4) {
+  margin-right: 0;
+}
+
 /* ========================/// STUDIO ///====================== */
 
 /* ========================MAIN====================== */
@@ -187,12 +225,16 @@ p {
 .hero {
   max-width: 1600px;
   margin: 0 auto;
-  background-color: #2f303a;
+  background-color: #c4c4c4;
   text-align: center;
   padding-top: 202px;
   padding-bottom: 198px;
 
-  background-image: url(../images/studio/bgr-office.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/studio/bgr-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -379,7 +421,7 @@ p {
 }
 
 .soc-icon {
-fill: var(--icon-fill);
+  fill: var(--icon-fill);
 }
 
 .soc-link:hover .soc-icon {
