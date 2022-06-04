@@ -146,7 +146,6 @@ p {
   fill: currentColor;
 }
 
-
 /* ========================FOOTER====================== */
 
 .footer {
@@ -431,8 +430,8 @@ p {
 }
 
 .soc-link:hover .soc-icon,
-.soc-link:focus .soc-icon { 
-   fill: var(--text-color-alt);
+.soc-link:focus .soc-icon {
+  fill: var(--text-color-alt);
 }
 
 /* ======================== НАШИ КЛИЕНТЫ ====================== */
@@ -445,32 +444,38 @@ p {
 }
 
 .client-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 30px;
 
   width: 170px;
   height: 92px;
-  border: 1px solid rgba(175, 177, 184, 1);
-  border-radius: 4px;
 }
 
-.client-item:hover {
+.client-link:hover,
+.client-link:focus {
+  color: var(--text-colot-accent);
   border: 1px solid var(--btn-color-social-focus);
   cursor: pointer;
-}
-
-.client-item:hover .client-icon {
-  fill: var(--btn-color-social-focus);
 }
 
 .client-item:nth-child(6) {
   margin-right: 0;
 }
 
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  color: var(--icon-company-fill);
+
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+}
+
 .client-icon {
-  fill: var(--icon-company-fill);
+  fill: currentColor;
 }
 
 /* ========================/// PORTFOLIO ///====================== */
