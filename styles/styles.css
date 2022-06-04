@@ -155,6 +155,7 @@ p {
   fill: currentColor;
 }
 
+
 /* ========================FOOTER====================== */
 
 .footer {
@@ -438,8 +439,9 @@ p {
   fill: var(--icon-fill);
 }
 
-.soc-link:hover .soc-icon {
-  fill: var(--text-color-alt);
+.soc-link:hover .soc-icon,
+.soc-link:focus .soc-icon { 
+   fill: var(--text-color-alt);
 }
 
 /* ======================== НАШИ КЛИЕНТЫ ====================== */
