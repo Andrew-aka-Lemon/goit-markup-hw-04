@@ -124,7 +124,10 @@ p {
   color: var(--text-colot-accent);
 }
 .contacts-link {
-  color: inherit;
+  color: var(--text-color-secondary);
+
+  display: flex;
+  align-items: center;
 }
 
 .header-contacts-item:not(:last-child) {
@@ -135,18 +138,6 @@ p {
 .header .container {
   display: flex;
   align-items: center;
-}
-
-.header-contacts-item {
-  display: flex;
-  align-items: center;
-
-  color: var(--text-color-secondary);
-}
-
-.header-contacts-item:hover,
-.header-contacts-item:focus {
-  color: var(--text-colot-accent);
 }
 
 .icon-smartphone,
