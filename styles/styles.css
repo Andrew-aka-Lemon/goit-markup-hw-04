@@ -124,7 +124,7 @@ p {
   color: var(--text-colot-accent);
 }
 .contacts-link {
-  color: var(--text-color-secondary);
+  color: inherit;
 }
 
 .header-contacts-item:not(:last-child) {
@@ -140,16 +140,19 @@ p {
 .header-contacts-item{
   display: flex;
   align-items: center;
+
+  color: var(--text-color-secondary);
+}
+
+.header-contacts-item:hover {
+  color: var(--text-colot-accent);
 }
 
 .icon-smartphone, .icon-envelope {
   margin-right: 10px;
-  fill: var(--text-color-secondary);
+  fill: currentColor;
 }
 
-/* .icon-envelope:hover {
-  fill: var(--text-colot-accent);
-} */
 
 
 /* ========================FOOTER====================== */
